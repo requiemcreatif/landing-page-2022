@@ -6,53 +6,113 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Manipulating the DOM</title>
   <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <!-- HTML Follows BEM naming conventions 
-  IDs are only used for sections to connect menu achors to sections -->
+  <!--IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list"></ul>
     </nav>
   </header>
-  <main>
-    <header class="main__hero">
-      <h1>Landing Page </h1>
-    </header>
-    <!-- Each Section has an ID (used for the anchor) and 
-    a data attribute that will populate the li node.
-    Adding more sections will automatically populate nav.
-    The first section is set to active class by default -->
-    <section id="section1" data-nav="Section 1" class="your-active-class">
-      <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+  <!-- MAIN -->
+  <!-- TOP SECTION -->
+  <main class="main">
+    <section id="first-section">
+      <div class="first-section-one">
+        <img class="top-img" src="/img/spacejoy-85pCvDWDMmI-unsplash.jpg" alt="">
+        <!-- Each Section has an ID (used for the anchor) and 
+        a data attribute that will populate the li node.
+        Adding more sections will automatically populate nav.
+        The first section is set to active class by default -->
+      </div>
+      <div class="first-section-two">
+        <h2>QUALITY DESIGN FOR ALL</h2>
+        <p class="first-sec-two-intro"><strong>we create spaces, build dreams and shape environments.</strong></p><br>
+        <p class="first-sec-two-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+        <p>EXPLORE OUR PRODUCTS</p>
       </div>
     </section>
-    <section id="section2" data-nav="Section 2">
-      <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+    <!-- SECOND SECTION -->
+    <section id="second-section">
+      <div class="second-sec">
+        <img src="/img/Ellipse 10.png" alt="">
+        <h4 class="heading-sec-sect">Best quality</h4>
+        <p>Good design begins with expressing a unique and exceptional story.</p>
+      </div>
+      <div class="second-sec">
+        <img src="/img/Ellipse 10.png" alt="">
+        <h4 class="heading-sec-sect">Rich understanding</h4>
+        <p>Our designers possess a rich understanding of all aspects of a project.</p>
+      </div>
+      <div class="second-sec">
+        <img src="/img/Ellipse 10.png" alt="">
+        <h4 class="heading-sec-sect">Great support</h4>
+        <p>Our forward thinking design teams are leading successful projects worldwide.</p>
+      </div> 
+    </section>
+
+    <!-- THIRD SECTION -->
+    <section id="third-section">
+      <h3>Explore our exclusive design.</h3>
+      <div>
+        <!-- <img src="/img/spacejoy-aAPuOQxS8yE-unsplash.jpg" alt=" -->
+        <!-- <img src="/img/spacejoy-GKTal6gI4P0-unsplash.jpg" alt="-->
+        <img src="/img/spacejoy-ucCsSBzYBQQ-unsplash.jpg" alt="">
       </div>
     </section>
-    <section id="section3" data-nav="Section 3">
-      <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+    <!-- FORTH SECTION -->
+    <div id="forth-section-intro"><h3>This is how we do it.</h3></div>
+    <section id="forth-section">
+      <div class="forth-one four"> 
+        <div class="forth-one-first four">
+          <p class="num"><strong>01.</strong> </p>
+        <h3>Discuss the concept with us.</h3>
+        </div>
+
+        <div class="forth-one-second four">
+          <p>Do you need a talented design eye to cast vision and look for one-of-a-kind opportunities in your home? This is a robust consultation-conversation package.</p>
+          <p class="learn">LEARN MORE</p>
+        </div>   
       </div>
+
+      <hr>
+
+      <div class="forth-two four">
+        <div class="forth-two-first four">
+          <p class="num"><strong>02.</strong> </p>
+        <h3>Discuss the concept with us.</h3>
+        </div>
+        <div class="forth-two-second four">
+          <p>We will send you a proposal and service agreement for your review. Then we will get down to the exciting stuff and communicate concepts visually.</p>
+          <p class="learn">LEARN MORE</p>
+        </div>    
+      </div>
+
+      <hr>
+
+      <div class="forth-three four four">
+        <div class="forth-three-first four">
+          <p class="num"><strong>03.</strong> </p>
+        <h3>Discuss the concept with us.</h3>
+        </div>
+        <div class="forth-three-first four">
+          <p>Specializing in whole-home transformations, we design with intention to deliver interiors with a depth of character and emotion, and a breadth of function and practicality.</p>
+          <p class="learn">LEARN MORE</p>
+        </div>   
+      </div>
+      <hr>
+
     </section>
+    
   </main>
-  <footer class="page__footer">
-    <p>Alain Omeruta Mani</p>
+  <!-- FOOTER -->
+  <footer>
+    <!-- <p>Alain Omeruta Mani</p> -->
   </footer>
 
 </body>
