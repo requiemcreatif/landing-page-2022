@@ -18,17 +18,17 @@
 <body>
   <!--IDs are only used for sections to connect menu achors to sections -->
   <header class="page-header">
-    <nav class="navbar-menu">
+    <nav class="navbar-menu sticky">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar-list"></ul>
     </nav>
 
     <!-- MOBILE NAVIGATION -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hide">
       <h3>Omeruta</h3>
       <a href=""><i class="fa-solid fa-bars mobile-nav-btn"></i></a>
     </nav>
-    <nav class="mobile-nav-list">
+    <nav class="mobile-nav-list hide">
       <ul class="navbar-mobile-link ">
         <li class="link">
           <a href="">Showcase</a>
@@ -54,7 +54,8 @@
     </nav>
   </header>
 
-  <!-- FIRST SECTION -->
+
+  <!-- FIRST SECTION /HOME-->
   <main class="main">
     <section id="first-section" >
       <div class="first-section-one">
@@ -73,7 +74,7 @@
       </div>
     </section>
 
-    <!-- SECOND SECTION -->
+    <!-- SECOND SECTION / SHOWCASE-->
     <section id="second-section">
       <div class="second-sec">
         <i class="fa-solid fa-align-left"></i>
@@ -100,24 +101,24 @@
     </section>
 
     <!-- THIRD SECTION -->
-    <section id="third-section">
+    <div id="third-section">
       <div class="third-sec-one">
         <h3>Explore our exclusive design.</h3>
       </div>
       <div class="third-sec-two">
         <div class="one">
-          <img class="hide" src="/img/building-five.jpg" alt="yellow building">
+          <img class="hide1" src="/img/building-five.jpg" alt="yellow building">
         </div>
         <div class="two">
-          <img class="hide" src="/img/building-six.jpg" alt="train station Dubai">
+          <img class="hide1" src="/img/building-six.jpg" alt="train station Dubai">
         </div>
         <div class="three">
-          <img class="hide" src="/img/building-seven.jpg" alt="train station Dubai">
+          <img class="hide1" src="/img/building-seven.jpg" alt="train station Dubai">
         </div> 
       </div>
-    </section>
+    </div>
 
-    <!-- FORTH SECTION -->
+    <!-- FORTH SECTION / HOW WE DO IT -->
     <div class="forth-section-intro"><h3>This is how we do it.</h3></div>
     <section id="forth-section">
 
@@ -158,7 +159,7 @@
       </div>
 
     </section>
-    <!-- FIFTH SECTION -->
+    <!-- FIFTH SECTION / OUR PROJECTS-->
     <section id="fifth-section">
 
         <div class="fifth-one">
@@ -173,7 +174,7 @@
     </section>
 
   </main>
-  <!-- SIXTH SECTION -->
+  <!-- SIXTH SECTION / TESTIMONIALS-->
   <section id="sixth-section">
     <div class="six-one">
       <blockquote>“I absolutely love my new home and cannot thank you enough for all of your time and expertise”</blockquote>
@@ -184,7 +185,7 @@
       <img src="/img/building-four.jpg" alt="Mexico building">
     </div>
   </section>
-  <!-- CONTACT SECTION -->
+  <!-- CONTACT SECTION / SUBSCRIBE-->
   <div class="subscribe-text">
     <h2>Subscribe to our newsletter to get updated.</h2>
   <p>Get our latest update on your inbox. With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
@@ -195,21 +196,21 @@
 
         <div class="sect-contact">
           <label for="first-name">Your first name</label>
-          <input type="text" id="first-name" name="firstname" placeholder="Write your first name here">
+          <input type="text" id="first-name" name="firstname" placeholder="Write your first name here" required>
         </div>
         
         <div class="sect-contact">
           <label for="surname">Your Surname</label>
-          <input type="text" id="surname" name="surname" placeholder="Write your surname here">
+          <input type="text" id="surname" name="surname" placeholder="Write your surname here" required>
         </div>
 
         <div class="sect-contact">
           <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" placeholder="Write your email here">
+          <input type="text" id="email" name="email" placeholder="Write your email here" required>
         </div>
         <div class="sect-contact">
           <label for="phone">Phone Number</label>
-          <input type="text" id="phone" name="phone" placeholder="Write your phone here">
+          <input type="text" id="phone" name="phone" placeholder="Write your phone here" required>
         </div>
       </form>
     </div>
@@ -219,19 +220,19 @@
 
         <div class="sect-contact">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Write a subject line">
+          <input type="text" id="subject" name="subject" placeholder="Write a subject line" required>
         </div>
         
         <div class="sect-contact">
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something..." style="height: 175px"></textarea>
+          <textarea id="message" name="message" placeholder="Write something..." style="height: 175px" required></textarea>
         </div>
         
         <input class="btn-subscribe" type="submit" value="Subscribe">
     </div>
   </section>
   <!-- PRE-FOOTER -->
-  <section id="pre-footer">
+  <article id="pre-footer">
     <div class="pre-foot-one pref">
       <h3>Omeruta</h3>
       <p>We don't read your mails with love and passions. No doubt, really.</p>
@@ -265,7 +266,7 @@
         <li><p> Products</p></li>
       </ul>
     </div>
-  </section>
+  </article>
   <!-- FOOTER -->
   <footer id="footer">
     <p>©Alain Omeruta Mani 2022</p>
